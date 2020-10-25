@@ -1,0 +1,6 @@
+.tour{
+    background-image: url("../../images/tour.jpg");
+    background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 70px 100px 80px 100px;
+}

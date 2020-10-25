@@ -1,0 +1,34 @@
+.App {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+}
+
+.nav-item > .active {
+  border-bottom: 2px solid black;
+}
+
+.reactscrollLink:hover {
+  color: rgb(184, 57, 74) !important;
+  cursor: pointer;
+}
+
+.bit-widget .bit-offers {
+  background-color: none !important;
+  border: 1px solid #ffffff !important;
+  color: #ffffff;
+}
+
+.bit-widget .bit-rsvp {
+  background-color: #ffffff !important;
+  border: none !important;
+  color: black;
+}
+
+.bit-widget .bit-play-my-city-button {
+  background-color: #ffffff !important;
+  border: none !important;
+  color: black !important;
+}
+
+.bit-widget .bit-venue {
+  color: white !important;
+}
