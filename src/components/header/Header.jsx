@@ -9,11 +9,17 @@ import {
   NavItem,
 } from "reactstrap";
 import logo from "../../images/logo.png";
+import whiteLogo from "../../images/4bwhite.png";
 import facebook from "../../images/facebook.png";
 import instagram from "../../images/instagram.png";
 import youtube from "../../images/youtube.png";
 import twitter from "../../images/twitter.png";
 import soundcloud from "../../images/soundcloud.png";
+import facebookWhite from "../../images/facebookWhite.png";
+import instagramWhite from "../../images/instagramWhite.png";
+import youtubeWhite from "../../images/youtubeWhite.png";
+import twitterWhite from "../../images/twitterWhite.png";
+import soundcloudWhite from "../../images/soundcloudWhite.png";
 import style from "./Header.module.css";
 
 export default class Example extends React.Component {
@@ -22,7 +28,9 @@ export default class Example extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
+      color: "white",
       isOpen: false,
+      logo: whiteLogo,
     };
   }
   toggle() {
@@ -35,17 +43,52 @@ export default class Example extends React.Component {
     scroll.scrollToTop();
   };
 
+  listenScrollEvent = (e) => {
+    var shadow = {
+      boxShadow: "0px 0px 10px 0px rgba(50, 50, 50, 0.75)",
+    };
+    var clear = {
+      boxShadow: "none",
+    };
+    if (window.scrollY > 400) {
+      this.setState({
+        color: "black",
+        backgroundColor: "white",
+        logo: logo,
+        shadow: shadow,
+      });
+    } else {
+      this.setState({
+        color: "white",
+        backgroundColor: "",
+        logo: whiteLogo,
+        shadow: clear,
+      });
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenScrollEvent);
+  }
+
   render() {
     return (
       <>
-        <Navbar light expand="md" fixed="top" className={style.navbar}>
+        <Navbar
+          color={this.state.backgroundColor}
+          style={this.state.shadow}
+          light
+          expand="md"
+          fixed="top"
+          className={style.navbar}
+        >
           <NavbarToggler onClick={this.toggle} className={style.toggler} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
               <NavItem className={style.nav}>
                 <Link
                   className="reactscrollLink"
-                  style={{ color: "black" }}
+                  style={{ color: this.state.color }}
                   activeClass="active"
                   to="home"
                   spy={true}
@@ -59,7 +102,7 @@ export default class Example extends React.Component {
               <NavItem className={style.nav}>
                 <Link
                   className="reactscrollLink"
-                  style={{ color: "black" }}
+                  style={{ color: this.state.color }}
                   activeClass="active"
                   to="tour"
                   spy={true}
@@ -73,7 +116,7 @@ export default class Example extends React.Component {
               <NavItem className={style.nav}>
                 <Link
                   className="reactscrollLink"
-                  style={{ color: "black" }}
+                  style={{ color: this.state.color }}
                   activeClass="active"
                   to="music"
                   spy={true}
@@ -86,7 +129,7 @@ export default class Example extends React.Component {
               <NavItem className={style.nav}>
                 <Link
                   className="reactscrollLink"
-                  style={{ color: "black" }}
+                  style={{ color: this.state.color }}
                   activeClass="active"
                   to="merch"
                   spy={true}
@@ -100,7 +143,7 @@ export default class Example extends React.Component {
               <NavItem className={style.nav}>
                 <Link
                   className="reactscrollLink"
-                  style={{ color: "black" }}
+                  style={{ color: this.state.color }}
                   activeClass="active"
                   to="contact"
                   spy={true}
@@ -115,45 +158,81 @@ export default class Example extends React.Component {
           </Collapse>
           <NavbarBrand className="d-lg-block">
             <img
-              src={logo}
+              src={this.state.logo}
               alt="Logo"
               className={style.logo}
               onClick={this.scrollToTop}
             />
           </NavbarBrand>
-          <div>
-            <a href="https://www.facebook.com/LIKE4B/" target="_blank">
-              <img src={facebook} className={style.socials} />
-            </a>
+          {this.state.color === "white" ? (
+            <div>
+              <a href="https://www.facebook.com/LIKE4B/" target="_blank">
+                <img src={facebookWhite} className={style.socials} />
+              </a>
 
-            <a href="https://www.instagram.com/dj4b/" target="_blank">
-              <img src={instagram} className={style.socials} />
-            </a>
+              <a href="https://www.instagram.com/dj4b/" target="_blank">
+                <img src={instagramWhite} className={style.socials} />
+              </a>
 
-            <a
-              href="https://www.youtube.com/user/THEREALDJ4B/videos"
-              target="_blank"
-            >
-              <img src={youtube} className={style.socials} />
-            </a>
+              <a
+                href="https://www.youtube.com/user/THEREALDJ4B/videos"
+                target="_blank"
+              >
+                <img src={youtubeWhite} className={style.socials} />
+              </a>
 
-            <a href="https://twitter.com/DJ4B" target="_blank">
-              <img src={twitter} className={style.socials} />
-            </a>
+              <a href="https://twitter.com/DJ4B" target="_blank">
+                <img src={twitterWhite} className={style.socials} />
+              </a>
 
-            <a href="https://soundcloud.com/dj4b" target="_blank">
-              <img src={soundcloud} className={style.socials} />
-            </a>
+              <a href="https://soundcloud.com/dj4b" target="_blank">
+                <img src={soundcloudWhite} className={style.socials} />
+              </a>
 
-            <iframe
-              src="https://embed.spotify.com/follow/1/?uri=spotify:artist:0LIl9fjMPEZp8UDiL8Yuo4&amp;size=basic&amp;theme=light&amp;show-count=0"
-              width="100"
-              height="25"
-              scrolling="no"
-              frameBorder="0"
-              allowtransparency="true"
-            ></iframe>
-          </div>
+              <iframe
+                src="https://embed.spotify.com/follow/1/?uri=spotify:artist:0LIl9fjMPEZp8UDiL8Yuo4&amp;size=basic&amp;theme=light&amp;show-count=0"
+                width="100"
+                height="25"
+                scrolling="no"
+                frameBorder="0"
+                allowtransparency="true"
+              ></iframe>
+            </div>
+          ) : (
+            <div>
+              <a href="https://www.facebook.com/LIKE4B/" target="_blank">
+                <img src={facebook} className={style.socials} />
+              </a>
+
+              <a href="https://www.instagram.com/dj4b/" target="_blank">
+                <img src={instagram} className={style.socials} />
+              </a>
+
+              <a
+                href="https://www.youtube.com/user/THEREALDJ4B/videos"
+                target="_blank"
+              >
+                <img src={youtube} className={style.socials} />
+              </a>
+
+              <a href="https://twitter.com/DJ4B" target="_blank">
+                <img src={twitter} className={style.socials} />
+              </a>
+
+              <a href="https://soundcloud.com/dj4b" target="_blank">
+                <img src={soundcloud} className={style.socials} />
+              </a>
+
+              <iframe
+                src="https://embed.spotify.com/follow/1/?uri=spotify:artist:0LIl9fjMPEZp8UDiL8Yuo4&amp;size=basic&amp;theme=light&amp;show-count=0"
+                width="100"
+                height="25"
+                scrolling="no"
+                frameBorder="0"
+                allowtransparency="true"
+              ></iframe>
+            </div>
+          )}
         </Navbar>
       </>
     );

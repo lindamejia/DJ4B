@@ -1,23 +1,22 @@
 import React, { Component } from "react";
 import style from "./Featured.module.css";
-import featuredImage from "../../images/main-new.jpg";
+import nvr2 from "../../images/nvr2.png";
+import goingNowhere from "../../images/going-nowhere.jpg";
 
 export default class Featured extends Component {
   render() {
     return (
       <div className={style.featured}>
-        <h1 className={style.caption}>
-          4B - Lucid feat. Austin Mahone
-          <br /> and Abraham Mate
-        </h1>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Wsmr3UcxTz8"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen=""
-        ></iframe>
+        <div className={style.gn} id="home">
+          <a href="https://ffm.to/goingnowhere" target="_blank">
+            <img className={style.image} src={goingNowhere} />
+          </a>
+        </div>
+        <div className={style.never}>
+          <a href="https://ffm.to/4b-dope" target="_blank">
+            <img className={style.image} src={nvr2} />
+          </a>
+        </div>
       </div>
     );
   }

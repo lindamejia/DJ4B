@@ -1,6 +1,13 @@
-.tour{
-    background-image: url("../../images/tour.jpg");
-    background-size: 100% auto;
+.tour {
+  background-image: url("../../images/tour.jpg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
   padding: 70px 100px 80px 100px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  padding: 40px;
+  background-position: top center;
 }

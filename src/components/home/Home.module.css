@@ -1,21 +1,47 @@
 .home {
-  margin-top:90px;
-  background-color: #34fbaa;
-  height: 900px;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  position: relative;
+  min-height: 300px;
+  max-height: 800px;
+  overflow: hidden;
+}
+.video {
   width: 100%;
-  padding-top: 90px;
-  background-position: top center;
-  box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
+  height: 100%;
 }
 
-.image {
-  max-width: 700px;
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 75px;
+/* Add some content at the bottom of the video/page */
+.Content {
+  position: absolute;
+  top: 0;
+  color: #f1f1f1;
+  background-color: rgba(107, 21, 21, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.SubContent {
+  text-align: center;
+  padding: 10px;
+}
+.SubContent p {
+  color: #eeeeeead;
+  font-size: 1.3rem;
+}
+.SubContent button {
+  margin-top: 30px;
+  color: #f1f1f1;
+  border: #f1f1f1 1px solid;
+  padding: 10px 5px;
+  background-color: hsla(0, 0%, 0%, 0);
+  font-size: 1.25rem;
+  border-radius: 0px;
+}
+.SubContent button:hover {
+  background-color: #f1f1f1;
+  color: black;
+  border: none;
+
 }
