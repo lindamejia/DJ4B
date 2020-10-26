@@ -22,3 +22,14 @@
   color: #000 !important;
   margin: 10px 10px 10px 0px;
 }
+
+@media screen and (max-width: 480px) {
+  .musicLink {
+    background-color: #fff;
+    padding: 8px 30px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+  }
+}
