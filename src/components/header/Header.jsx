@@ -86,7 +86,7 @@ export default class Example extends React.Component {
           className={style.navbar}
         >
           <Container className="justify-content-center">
-            <Col md={{ size: 5, offset: 1 }} xs={{ size:6 }}>
+            <Col md={{ size: 5 }} xs={{ size:6 }}>
               <NavbarToggler onClick={this.toggle} className={style.toggler} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav navbar>

@@ -1,19 +1,31 @@
 import React from "react";
 import video from "../../images/going-nowhere.mp4";
+import thumb from "../../images/thumb1.jpg";
 import style from "./Home.module.css";
 
-function Home() {
+const Home = (props) => {
+  const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
+  const onLoadedData = () => {
+    setIsVideoLoaded(true);
+  };
   return (
     <div className={style.home} id="home">
+      <img
+        src={thumb}
+        className={style.videoThumb}
+        alt="thumb"
+        style={{ opacity: isVideoLoaded ? 0 : 1 }}
+      />
       <video
-        className={style.video}
         autoPlay
         playsInline
         muted
-        src={video}
         loop="loop"
+        src={video}
+        onLoadedData={onLoadedData}
+        style={{ opacity: isVideoLoaded ? 1 : 0 }}
+        className={style.video}
       />
-
       <div className={style.Content}>
         <div className={style.SubContent}>
           <h1>GOING NOWHERE</h1>
@@ -27,6 +39,39 @@ function Home() {
       </div>
     </div>
   );
-}
+};
 
 export default Home;
+
+// import React from "react";
+// import video from "../../images/going-nowhere.mp4";
+// import style from "./Home.module.css";
+
+// function Home() {
+//   return (
+
+//       <video
+//         className={style.video}
+//         autoPlay
+//         playsInline
+//         muted
+//         src={video}
+//         loop="loop"
+//       />
+
+//       <div className={style.Content}>
+//         <div className={style.SubContent}>
+//           <h1>GOING NOWHERE</h1>
+//           <p>ft. Trippie Redd</p>
+//           <a href="https://ffm.to/goingnowhere">
+//             <button type="button" className="btn btn-outline-dark">
+//               OUT NOW
+//             </button>
+//           </a>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Home;
