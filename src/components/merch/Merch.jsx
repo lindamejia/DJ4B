@@ -14,7 +14,7 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/apparel/original-iv-t-shirt-white"
-                target="_blank"
+                target="_blank" className={style.merchLink}
               >
                 <img
                   height="250"
@@ -29,7 +29,7 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/apparel/original-iv-t-shirt-black"
-                target="_blank"
+                target="_blank" className={style.merchLink}
               >
                 <img
                   height="250"
@@ -44,7 +44,7 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/apparel/original-iv-crop-fleece-crew-black"
-                target="_blank"
+                target="_blank" className={style.merchLink}
               >
                 <img
                   height="250"
@@ -61,7 +61,7 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/accessories/iv-beanie-red"
-                target="_blank"
+                target="_blank" className={style.merchLink}
               >
                 <img
                   height="250"
@@ -74,7 +74,7 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/accessories/4b-pop-socket"
-                target="_blank"
+                target="_blank" className={style.merchLink}
               >
                 <img
                   height="250"
@@ -87,7 +87,7 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/accessories/iv-pop-socket"
-                target="_blank"
+                target="_blank" className={style.merchLink}
               >
                 <img
                   height="250"
