@@ -5,16 +5,24 @@ import style from "./Merch.module.css";
 export default class Merch extends Component {
   render() {
     return (
-      <div id="merch" style={{ textAlign: "center", marginBottom: "30px" }}>
+      <div
+        id="merch"
+        style={{
+          textAlign: "center",
+          marginBottom: "30px",
+         
+        }}
+      >
         <a href="https://4b.merchtable.com/" className={style.merch}>
-          <h1 style={{ padding: " 30px 0px 30px 0px" }}>MERCH</h1>
+          <h1 style={{ padding: " 100px 0px 30px 0px",  backgroundColor: "black" }}>MERCH</h1>
         </a>
         <Container>
           <Row>
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/apparel/original-iv-t-shirt-white"
-                target="_blank" className={style.merchLink}
+                target="_blank"
+                className={style.merchLink}
               >
                 <img
                   height="250"
@@ -29,7 +37,8 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/apparel/original-iv-t-shirt-black"
-                target="_blank" className={style.merchLink}
+                target="_blank"
+                className={style.merchLink}
               >
                 <img
                   height="250"
@@ -44,7 +53,8 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/apparel/original-iv-crop-fleece-crew-black"
-                target="_blank" className={style.merchLink}
+                target="_blank"
+                className={style.merchLink}
               >
                 <img
                   height="250"
@@ -61,7 +71,8 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/accessories/iv-beanie-red"
-                target="_blank" className={style.merchLink}
+                target="_blank"
+                className={style.merchLink}
               >
                 <img
                   height="250"
@@ -74,7 +85,8 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/accessories/4b-pop-socket"
-                target="_blank" className={style.merchLink}
+                target="_blank"
+                className={style.merchLink}
               >
                 <img
                   height="250"
@@ -87,7 +99,8 @@ export default class Merch extends Component {
             <Col md={4}>
               <a
                 href="https://4b.merchtable.com/accessories/iv-pop-socket"
-                target="_blank" className={style.merchLink}
+                target="_blank"
+                className={style.merchLink}
               >
                 <img
                   height="250"

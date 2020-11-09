@@ -164,7 +164,7 @@ export default class Example extends React.Component {
                 </Nav>
               </Collapse>
             </Col>
-            <Col md={{ size: 2, offset: 1 }} xs={{ size: 3, offset: 3 }}>
+            <Col md={{ size: 2, offset: 2 }} xs={{ size: 3, offset: 3 }}>
               <NavbarBrand className="d-lg-block">
                 <img
                   src={this.state.logo}
@@ -174,7 +174,7 @@ export default class Example extends React.Component {
                 />
               </NavbarBrand>
             </Col>
-            <Col md={{ size: 5, offset: 1 }} xs={{ size: 11, offset: 1 }}>
+            <Col md={{ size: 5 }} xs={{ size: 11, offset: 1 }}>
               {this.state.color === "white" ? (
                 <div className={style.socialMedia}>
                   <a href="https://www.facebook.com/LIKE4B/" target="_blank">

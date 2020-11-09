@@ -13,6 +13,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Merch title="Merch" subtitle="Merch" dark={true} id="merch" />
+
         <Home title="home" subtitle="home" dark={true} id="Home" />
         <Featured
           title="featured"
@@ -22,7 +24,6 @@ class App extends Component {
         />
         <Tour title="tour" subtitle="4B Touring" dark={true} id="tour" />
         <Music title="Music" subtitle="Music" dark={true} id="music" />
-        <Merch title="Merch" subtitle="Merch" dark={true} id="merch" />
         <Contact />
       </div>
     );

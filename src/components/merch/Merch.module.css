@@ -1,6 +1,7 @@
 .merch {
+  background-color: black;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .merch:hover {
