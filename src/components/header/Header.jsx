@@ -86,7 +86,7 @@ export default class Example extends React.Component {
           className={style.navbar}
         >
           <Container className="justify-content-center">
-            <Col md={{ size: 5 }} xs={{ size:6 }}>
+            <Col md={{ size: 5 }} xs={{ size: 6 }}>
               <NavbarToggler onClick={this.toggle} className={style.toggler} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav navbar>
@@ -132,18 +132,20 @@ export default class Example extends React.Component {
                     </Link>
                   </NavItem>
                   <NavItem className={style.nav}>
-                    <Link
-                      className="reactscrollLink"
-                      style={{ color: this.state.color }}
-                      activeClass="active"
-                      to="merch"
-                      spy={true}
-                      smooth={true}
-                      offset={2000}
-                      duration={500}
-                    >
-                      MERCH
-                    </Link>
+                    <a href="https://4b.merchtable.com/">
+                      <Link
+                        className="reactscrollLink"
+                        style={{ color: this.state.color }}
+                        activeClass="active"
+                        to="merch"
+                        spy={true}
+                        smooth={true}
+                        // offset={2000}
+                        duration={500}
+                      >
+                        MERCH
+                      </Link>
+                    </a>
                   </NavItem>
                   <NavItem className={style.nav}>
                     <Link
@@ -162,7 +164,7 @@ export default class Example extends React.Component {
                 </Nav>
               </Collapse>
             </Col>
-            <Col md={{ size: 2, offset: 1 }} xs={{ size:3, offset:3 }} >
+            <Col md={{ size: 2, offset: 1 }} xs={{ size: 3, offset: 3 }}>
               <NavbarBrand className="d-lg-block">
                 <img
                   src={this.state.logo}
@@ -172,7 +174,7 @@ export default class Example extends React.Component {
                 />
               </NavbarBrand>
             </Col>
-            <Col md={{ size: 5, offset: 1 }} xs={{ size:11, offset:1 }}>
+            <Col md={{ size: 5, offset: 1 }} xs={{ size: 11, offset: 1 }}>
               {this.state.color === "white" ? (
                 <div className={style.socialMedia}>
                   <a href="https://www.facebook.com/LIKE4B/" target="_blank">

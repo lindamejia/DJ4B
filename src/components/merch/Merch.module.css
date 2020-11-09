@@ -1,0 +1,10 @@
+.merch {
+  text-align: center;
+  color: black;
+ 
+}
+
+.merch:hover {
+  color: #00ff2e;
+  text-decoration: none !important;
+}
