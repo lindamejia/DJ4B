@@ -10,63 +10,16 @@ export default class Merch extends Component {
         style={{
           textAlign: "center",
           marginBottom: "30px",
-         
         }}
       >
         <a href="https://4b.merchtable.com/" className={style.merch}>
-          <h1 style={{ padding: " 100px 0px 30px 0px",  backgroundColor: "black" }}>MERCH</h1>
+          <h1
+            style={{ padding: " 120px 0px 30px 0px", backgroundColor: "black" }}
+          >
+            MERCH
+          </h1>
         </a>
         <Container>
-          <Row>
-            <Col md={4}>
-              <a
-                href="https://4b.merchtable.com/apparel/original-iv-t-shirt-white"
-                target="_blank"
-                className={style.merchLink}
-              >
-                <img
-                  height="250"
-                  src="https://s3.amazonaws.com/dev1.mtimg.com/product_photos/imgs/000/045/481/full/FB_LogoTWhite-1.png"
-                />
-                <h4 style={{ color: "black" }}>
-                  Original "IV" T-Shirt (White)
-                </h4>
-                <h5 style={{ color: "black" }}>$5.00</h5>
-              </a>
-            </Col>
-            <Col md={4}>
-              <a
-                href="https://4b.merchtable.com/apparel/original-iv-t-shirt-black"
-                target="_blank"
-                className={style.merchLink}
-              >
-                <img
-                  height="250"
-                  src="https://s3.amazonaws.com/dev1.mtimg.com/product_photos/imgs/000/045/475/full/FB_LogoT-1.png"
-                />
-                <h4 style={{ color: "black" }}>
-                  Original "IV" T-Shirt (Black)
-                </h4>
-                <h5 style={{ color: "black" }}>$5.00</h5>
-              </a>
-            </Col>
-            <Col md={4}>
-              <a
-                href="https://4b.merchtable.com/apparel/original-iv-crop-fleece-crew-black"
-                target="_blank"
-                className={style.merchLink}
-              >
-                <img
-                  height="250"
-                  src="https://s3.amazonaws.com/dev1.mtimg.com/product_photos/imgs/000/045/480/full/FB_LogCropT-1.png"
-                />
-                <h4 style={{ color: "black" }}>
-                  Original "IV" Crop Fleece Crew (Black)
-                </h4>
-                <h5 style={{ color: "black" }}>$10.00</h5>
-              </a>
-            </Col>
-          </Row>
           <Row>
             <Col md={4}>
               <a
