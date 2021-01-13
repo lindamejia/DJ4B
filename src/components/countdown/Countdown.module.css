@@ -1,0 +1,30 @@
+.days,
+.hours,
+.minutes,
+.seconds {
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  width: 15%;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.unit {
+  color: white;
+}
+
+.countdown {
+  text-align: center;
+  background-image: url("../../images/night.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  padding: 300px 50px 200px 50px;
+  background-position: top center;
+}

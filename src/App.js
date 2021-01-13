@@ -7,14 +7,14 @@ import Tour from "./components/tour/Tour";
 import Music from "./components/music/Music";
 import Merch from "./components/merch/Merch";
 import Contact from "./components/contact/Contact";
+import Countdown from "./components/countdown/Countdown";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <Merch title="Merch" subtitle="Merch" dark={true} id="merch" />
-
+        <Countdown date={`2021-01-13T12:00:00`}/>
         <Home title="home" subtitle="home" dark={true} id="Home" />
         <Featured
           title="featured"
@@ -24,6 +24,7 @@ class App extends Component {
         />
         <Tour title="tour" subtitle="4B Touring" dark={true} id="tour" />
         <Music title="Music" subtitle="Music" dark={true} id="music" />
+        <Merch title="Merch" subtitle="Merch" dark={true} id="merch" />
         <Contact />
       </div>
     );
