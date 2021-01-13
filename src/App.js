@@ -8,7 +8,7 @@ import Music from "./components/music/Music";
 import Merch from "./components/merch/Merch";
 import Contact from "./components/contact/Contact";
 import Countdown from "./components/countdown/Countdown";
-// import moment from "moment";
+import Announcement from "./components/announcement/Announcement";
 
 var moment = require("moment-timezone");
 moment().tz("America/Los_Angeles").format();
@@ -19,13 +19,11 @@ class App extends Component {
     var date = june.tz("America/Los_Angeles").format("MM-DD-YYYY h:mm:ss a");
     console.log(date);
 
-    // var dates= moment.tz(1610525532, 'America/Los_Angeles').format('MM/DD/YYYY h:mm a')
-    // console.log(dates);
-
     return (
       <div className="App">
         <Header />
-        <Countdown date={date} />
+        {/* <Countdown date={date} /> */}
+        <Announcement />
         <Home title="home" subtitle="home" dark={true} id="Home" />
         <Featured
           title="featured"
