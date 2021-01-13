@@ -8,12 +8,20 @@ export default class Announcement extends Component {
         <div class={style.sign}>
           <p class={style.word}>4B & FRIENDS</p>
         </div>
-        <br/>
+        <br />
         <a
-          href="https://parknrave.frontgatetickets.com/"
+          href="https://parknrave.frontgatetickets.com/event/mss4t9t7fgkgw7kt"
           className={style.button}
+          target="_blank"
         >
-          TICKETS
+          FRIDAY TICKETS
+        </a>
+        <a
+          href="https://parknrave.frontgatetickets.com/event/s9ep2pja5j7hr45c"
+          className={style.button}
+          target="_blank"
+        >
+          SATURDAY TICKETS
         </a>
       </div>
     );
