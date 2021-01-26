@@ -36,6 +36,7 @@
 }
 
 .button:hover {
+  content: "SOLD OUT";
   background: rgb(180, 254, 68);
   background: linear-gradient(
     0deg,
@@ -80,11 +81,11 @@
 @media screen and (max-width: 480px) {
   .background {
     padding: 200px 20px 100px 0px;
-    text-align:center;
+    text-align: center;
   }
 
   .button {
     display: block;
-  margin: 10px 10px 10px 20px;
+    margin: 10px 10px 10px 20px;
   }
 }
