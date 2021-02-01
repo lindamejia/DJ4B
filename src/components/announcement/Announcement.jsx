@@ -3,6 +3,7 @@ import style from "./Announcement.module.css";
 
 function Announcement() {
   const [isShown, setIsShown] = useState(false);
+  const [isFridayShown, setIsFridayShown] = useState(false);
 
   return (
     <div className={style.background}>
@@ -14,8 +15,14 @@ function Announcement() {
         href="https://parknrave.frontgatetickets.com/event/mss4t9t7fgkgw7kt"
         className={style.button}
         target="_blank"
+        onMouseEnter={() => setIsFridayShown(true)}
+        onMouseLeave={() => setIsFridayShown(false)}
       >
-        FRIDAY TICKETS
+        {isFridayShown ? (
+          <span>SOLD OUT</span>
+        ) : (
+          <strike>FRIDAY TICKETS</strike>
+        )}
       </a>
       <a
         href="https://parknrave.frontgatetickets.com/event/s9ep2pja5j7hr45c"
