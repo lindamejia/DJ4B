@@ -11,7 +11,7 @@ class Contact extends Component {
           <Col md={4}>
             <a name="contact"></a>
             <h3>MANAGEMENT</h3>
-            <a href="mailto:info@tmwrk.net">info@tmwrk.net</a>
+            <a href="mailto:4B@ymugroup.com">4B@ymugroup.com</a>
           </Col>
 
           <Col md={4}>
