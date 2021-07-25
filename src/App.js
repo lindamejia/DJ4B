@@ -22,8 +22,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        {/* <Countdown date={date} /> */}
-        <Announcement />
         <Home title="home" subtitle="home" dark={true} id="Home" />
         <Featured
           title="featured"

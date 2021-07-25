@@ -1,6 +1,6 @@
 import React from "react";
-import video from "../../images/going-nowhere.mp4";
-import thumb from "../../images/thumb1.jpg";
+import video from "../../images/6.mp4";
+import thumb from "../../images/logo.png";
 import style from "./Home.module.css";
 
 const Home = (props) => {
@@ -26,7 +26,7 @@ const Home = (props) => {
         style={{ opacity: isVideoLoaded ? 1 : 0 }}
         className={style.video}
       />
-      <div className={style.Content}>
+      {/* <div className={style.Content}>
         <div className={style.SubContent}>
           <h1>GOING NOWHERE</h1>
           <p>ft. Trippie Redd</p>
@@ -36,7 +36,7 @@ const Home = (props) => {
             </button>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
