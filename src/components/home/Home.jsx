@@ -19,6 +19,7 @@ const Home = (props) => {
       <video
         autoPlay
         playsInline
+        muted
         loop="loop"
         src={video}
         onLoadedData={onLoadedData}
