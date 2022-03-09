@@ -1,0 +1,34 @@
+.home {
+    background-image: url("../../images/BG1.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    padding: 150px 50px 90px 50px;
+    background-position: top center;
+  }
+  
+  .videoContainer {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .videoContainer iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .videoContainer {
+      padding: 40% 0px;
+      margin: 70px -30px;
+    }
+  }

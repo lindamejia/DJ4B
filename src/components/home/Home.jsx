@@ -26,17 +26,6 @@ const Home = (props) => {
         style={{ opacity: isVideoLoaded ? 1 : 0 }}
         className={style.video}
       />
-      {/* <div className={style.Content}>
-        <div className={style.SubContent}>
-          <h1>GOING NOWHERE</h1>
-          <p>ft. Trippie Redd</p>
-          <a href="https://ffm.to/goingnowhere">
-            <button type="button" className="btn btn-outline-dark">
-              OUT NOW
-            </button>
-          </a>
-        </div>
-      </div> */}
     </div>
   );
 };

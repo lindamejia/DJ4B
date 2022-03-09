@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
-import Home from "./components/home/Home";
+// import Home from "./components/home/Home";
 import Featured from "./components/featured/Featured";
 import Tour from "./components/tour/Tour";
 import Music from "./components/music/Music";
@@ -9,6 +9,7 @@ import Merch from "./components/merch/Merch";
 import Contact from "./components/contact/Contact";
 import Countdown from "./components/countdown/Countdown";
 import Announcement from "./components/announcement/Announcement";
+import Youtube from "./components/youtube/Youtube.jsx";
 
 var moment = require("moment-timezone");
 moment().tz("America/Los_Angeles").format();
@@ -22,7 +23,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Home title="home" subtitle="home" dark={true} id="Home" />
+        <Youtube title="home" subtitle="home" dark={true} id="Home" />
         <Featured
           title="featured"
           subtitle="Featured"

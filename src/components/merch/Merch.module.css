@@ -1,7 +1,11 @@
 .merch {
-  background-color: black;
   text-align: center;
-  color: white;
+  color: black;
+}
+
+h1{
+  border: solid 1px black;
+  margin:100px;
 }
 
 .merch:hover {
@@ -10,5 +14,10 @@
 }
 
 .merchLink:hover {
-  color: #00ff2e;
+  color: #00ff2e !important;
+  text-decoration: none !important;
+}
+
+.card:hover{
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.112);
 }

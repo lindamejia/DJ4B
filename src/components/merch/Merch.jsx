@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Container, Row } from "reactstrap";
+import { Col, Container, Row, Card } from "reactstrap";
 import style from "./Merch.module.css";
 
 export default class Merch extends Component {
@@ -9,12 +9,12 @@ export default class Merch extends Component {
         id="merch"
         style={{
           textAlign: "center",
-          marginBottom: "30px",
+          marginBottom: "100px",
         }}
       >
         <a href="https://4b.merchtable.com/" className={style.merch}>
           <h1
-            style={{ padding: " 120px 0px 30px 0px", backgroundColor: "black" }}
+            style={{ padding: " 50px 0px 50px 0px" }}
           >
             MERCH
           </h1>
@@ -22,6 +22,7 @@ export default class Merch extends Component {
         <Container>
           <Row>
             <Col md={4}>
+              <Card className={style.card}>
               <a
                 href="https://4b.merchtable.com/accessories/iv-beanie-red"
                 target="_blank"
@@ -34,8 +35,10 @@ export default class Merch extends Component {
                 <h4 style={{ color: "black" }}>IV Beanie (Red)</h4>
                 <h5 style={{ color: "black" }}>$10.00</h5>
               </a>
+              </Card>
             </Col>
             <Col md={4}>
+              <Card className={style.card}>
               <a
                 href="https://4b.merchtable.com/accessories/4b-pop-socket"
                 target="_blank"
@@ -48,8 +51,10 @@ export default class Merch extends Component {
                 <h4 style={{ color: "black" }}>"4B" Pop Socket</h4>
                 <h5 style={{ color: "black" }}>$5.00</h5>
               </a>
+              </Card>
             </Col>
             <Col md={4}>
+              <Card className={style.card}>
               <a
                 href="https://4b.merchtable.com/accessories/iv-pop-socket"
                 target="_blank"
@@ -62,6 +67,7 @@ export default class Merch extends Component {
                 <h4 style={{ color: "black" }}>"IV" Pop Socket</h4>
                 <h5 style={{ color: "black" }}>$5.00</h5>
               </a>
+              </Card>
             </Col>
           </Row>
         </Container>

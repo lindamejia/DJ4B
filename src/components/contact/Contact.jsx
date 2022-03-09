@@ -6,7 +6,7 @@ class Contact extends Component {
   render() {
     return (
       <div className={style.contact} id="contact">
-      <Container >
+      <Container style={{ textAlign: "center" }} >
         <Row>
           <Col md={4}>
             <a name="contact"></a>
@@ -17,7 +17,6 @@ class Contact extends Component {
           <Col md={4}>
             <h3>BOOKINGS</h3>
             <h4>USA</h4>
-            <br />
             <a class="two" href="mailto:agary@paradigmagency.com">
               agary@paradigmagency.com{" "}
             </a>
@@ -25,14 +24,14 @@ class Contact extends Component {
 
           <Col md={4}>
             <h4>GLOBAL</h4>
-            <br />
             <a class="three" href="mailto:paul@primarytalent.com">
               paul@primarytalent.com{" "}
             </a>
           </Col>
         </Row>
-<Row style={{ textAlign: "center" }}><p>Copyright © 2022 4B Touring LLC</p></Row>
       </Container>
+      <br/>
+     <p>Copyright © 2022 4B Touring LLC</p>
       </div>
     );
   }
