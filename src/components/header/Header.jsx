@@ -174,7 +174,7 @@ export default class Example extends React.Component {
                 />
               </NavbarBrand>
             </Col>
-            <Col md={{ size: 5 }} xs={{ size: 11, offset: 1 }}>
+            <Col md={{ size: 5 }} xs={{ size: 12 }} className={style.socialsContainer}>
               {this.state.color === "white" ? (
                 <div className={style.socialMedia}>
                   <a href="https://www.facebook.com/LIKE4B/" target="_blank">
@@ -199,15 +199,6 @@ export default class Example extends React.Component {
                   <a href="https://soundcloud.com/dj4b" target="_blank">
                     <img src={soundcloudWhite} className={style.socials} />
                   </a>
-
-                  <iframe
-                    src="https://embed.spotify.com/follow/1/?uri=spotify:artist:0LIl9fjMPEZp8UDiL8Yuo4&amp;size=basic&amp;theme=light&amp;show-count=0"
-                    width="100"
-                    height="25"
-                    scrolling="no"
-                    frameBorder="0"
-                    allowtransparency="true"
-                  ></iframe>
                 </div>
               ) : (
                 <div className={style.socialMedia}>
@@ -233,15 +224,6 @@ export default class Example extends React.Component {
                   <a href="https://soundcloud.com/dj4b" target="_blank">
                     <img src={soundcloud} className={style.socials} />
                   </a>
-
-                  <iframe
-                    src="https://embed.spotify.com/follow/1/?uri=spotify:artist:0LIl9fjMPEZp8UDiL8Yuo4&amp;size=basic&amp;theme=light&amp;show-count=0"
-                    width="100"
-                    height="25"
-                    scrolling="no"
-                    frameBorder="0"
-                    allowtransparency="true"
-                  ></iframe>
                 </div>
               )}
             </Col>
