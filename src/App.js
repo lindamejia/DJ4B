@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
-// import Home from "./components/home/Home";
+import Home from "./components/home/Home";
 import Featured from "./components/featured/Featured";
 import Tour from "./components/tour/Tour";
 import Music from "./components/music/Music";
@@ -23,8 +23,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Youtube title="home" subtitle="home" dark={true} id="Home" />
-        <Featured
+        <Home title="home" subtitle="home" dark={true} id="Home" />
+        <Youtube
           title="featured"
           subtitle="Featured"
           dark={true}
