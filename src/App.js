@@ -5,7 +5,6 @@ import Home from "./components/home/Home";
 import Featured from "./components/featured/Featured";
 import Tour from "./components/tour/Tour";
 import Music from "./components/music/Music";
-import Merch from "./components/merch/Merch";
 import Contact from "./components/contact/Contact";
 import Countdown from "./components/countdown/Countdown";
 import Announcement from "./components/announcement/Announcement";
@@ -32,7 +31,6 @@ class App extends Component {
         />
         <Tour title="tour" subtitle="4B Touring" dark={true} id="tour" />
         <Music title="Music" subtitle="Music" dark={true} id="music" />
-//         <Merch title="Merch" subtitle="Merch" dark={true} id="merch" />
         <Contact />
       </div>
     );
