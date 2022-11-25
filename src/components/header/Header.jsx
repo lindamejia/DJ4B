@@ -136,7 +136,7 @@ export default class Example extends React.Component {
                       className="reactscrollLink"
                       style={{ color: this.state.color }}
                       activeClass="active"
-                      to="https://4b.lnk.to/merch"
+                      to={{pathname: "https://4b.lnk.to/merch"}} 
                       spy={true}
                       smooth={true}
                       duration={500}
