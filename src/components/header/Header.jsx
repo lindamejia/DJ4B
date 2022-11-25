@@ -131,6 +131,19 @@ export default class Example extends React.Component {
                       MUSIC
                     </Link>
                   </NavItem>
+                 <NavItem className={style.nav}>
+                    <Link
+                      className="reactscrollLink"
+                      style={{ color: this.state.color }}
+                      activeClass="active"
+                      to="https://4b.lnk.to/merch"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                    >
+                      MERCH
+                    </Link>
+                  </NavItem>
                   <NavItem className={style.nav}>
                     <Link
                       className="reactscrollLink"
