@@ -6,7 +6,7 @@ class Youtube extends Component {
     return (
       <div className={style.home} id="featured">
         <div className={style.videoContainer}>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o1a97QdWSno?si=GLWUxM0l_VGgHwo_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y-qvWDoC89E?si=NJ3lf-0hBwBJ_R3J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
       </div>
     );
   }
