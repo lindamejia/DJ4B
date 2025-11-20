@@ -23,6 +23,8 @@ import instagramWhite from "../../images/instagramWhite.png";
 import youtubeWhite from "../../images/youtubeWhite.png";
 import twitterWhite from "../../images/twitterWhite.png";
 import soundcloudWhite from "../../images/soundcloudWhite.png";
+import tiktok from "../../images/tiktok.png";
+import spotify from "../../images/spotify.png";
 import style from "./Header.module.css";
 
 export default class Example extends React.Component {
@@ -213,6 +215,12 @@ export default class Example extends React.Component {
 
                   <a href="https://soundcloud.com/dj4b" target="_blank">
                     <img src={soundcloud} className={style.socials} />
+                  </a>
+                  <a href="https://soundcloud.com/dj4b" target="_blank">
+                    <img src={tiktok} className={style.socials} />
+                  </a>
+                  <a href="https://soundcloud.com/dj4b" target="_blank">
+                    <img src={spotify} className={style.socials} />
                   </a>
                 </div>
               )}
