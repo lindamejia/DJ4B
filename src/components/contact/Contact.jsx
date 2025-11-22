@@ -31,7 +31,7 @@ class Contact extends Component {
         </Row>
       </Container>
       <br/>
-     <p>Copyright © 2023 4B Touring LLC</p>
+     <p>Copyright © 2025 4B Touring LLC</p>
       </div>
     );
   }
