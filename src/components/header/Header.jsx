@@ -191,6 +191,12 @@ export default class Example extends React.Component {
                   <a href="https://soundcloud.com/dj4b" target="_blank">
                     <img src={soundcloudWhite} className={style.socials} />
                   </a>
+                   <a href="https://www.tiktok.com/@dj4b" target="_blank">
+                    <img src={tiktok} className={style.socials} />
+                  </a>
+                  <a href="https://open.spotify.com/artist/0LIl9fjMPEZp8UDiL8Yuo4" target="_blank">
+                    <img src={spotify} className={style.socials} />
+                  </a>
                 </div>
               ) : (
                 <div className={style.socialMedia}>
@@ -216,10 +222,10 @@ export default class Example extends React.Component {
                   <a href="https://soundcloud.com/dj4b" target="_blank">
                     <img src={soundcloud} className={style.socials} />
                   </a>
-                  <a href="https://soundcloud.com/dj4b" target="_blank">
+                  <a href="https://www.tiktok.com/@dj4b" target="_blank">
                     <img src={tiktok} className={style.socials} />
                   </a>
-                  <a href="https://soundcloud.com/dj4b" target="_blank">
+                  <a href="https://open.spotify.com/artist/0LIl9fjMPEZp8UDiL8Yuo4" target="_blank">
                     <img src={spotify} className={style.socials} />
                   </a>
                 </div>
